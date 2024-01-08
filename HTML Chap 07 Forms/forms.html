@@ -15,13 +15,13 @@
         <p>Last Name:<input type="text" name="Last name" size="15" placeholder="Last Name" maxlength="30" minlength="12"
                 required></p>
         <p>Password: <input type=" password" name="password" size="15" placeholder="Password" maxlength="30"
-                minlength="12" required></p>
+                minlength="12" required>
         <p>Bio: <textarea name="bio" cols="60" rows="7" placeholder="Enter Your Bio...." required></textarea></p>
         <fieldset>
             <legend>Gender:</legend>
-            <p><label> <input type="radio" name="gender" value="Male">Male <br>
-                    <label> <input type="radio" name="gender" value="Female">Female </label><br>
-                    <label> <input type="radio" name="gender" value="Others">Others</label>
+            <p><label> <input type="radio" name="gender" value="Male" required>Male <br>
+                    <label> <input type="radio" name="gender" value="Female" required>Female </label><br>
+                    <label> <input type="radio" name="gender" value="Others" required>Others</label>
             </p>
         </fieldset>
         <fieldset>
@@ -32,7 +32,7 @@
             </p>
         </fieldset>
         <p>Country: <select name="Country" required>
-                <option value="">Select your Country</option>
+                <option value="" disabled selected>Select your Country</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -294,8 +294,8 @@
         <p>Email: <input type="email" name="email" maxlength="50" required size="15"></p>
         <p>Website: <input type="url" name="Website" maxlength="100" required size="15"></p>
         <p>Search: <input type="search" name="search" maxlength="100" required size="15"></p>
-        <input type="submit" name="submit" value="submit"><br><br>
-        <button>Submit</button>
+        <br><br>
+        <button>Submit</button><br><br>
         <a href="../index.html">Back to Home</a>
 
     </form>
